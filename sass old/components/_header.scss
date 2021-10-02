@@ -1,0 +1,131 @@
+.main-header {
+  // .main-header__conteiner
+  border-bottom: 1px solid #ececec;
+
+  &__conteiner {
+    display: flex;
+    align-items: center;
+  }
+
+  // .main-header__contact
+
+  &__contact {
+    display: flex;
+    margin-left: auto;
+    padding-left: 0px;
+    align-content: center;
+  }
+
+  // .main-header__item
+
+  &__item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // .main-header__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $contact-color;
+    @include animation(Color);
+
+    &:hover,
+    &:focus {
+      color: $blue-color;
+    }
+  }
+
+  // .main-header__icon
+
+  &__icon {
+    margin-right: 10px;
+    fill: $contact-color;
+
+    @include animation(Fill);
+
+    .main-header__link:hover & {
+      fill: $blue-color;
+    }
+  }
+
+  // .main-header__text
+}
+
+.main-header__logo {
+  margin-right: 93px;
+}
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $blue-color;
+}
+.logo__wrap {
+  color: $black-color;
+}
+.navigation {
+  // .navigation__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .navigation__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  // .navigation__link
+
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    color: $link-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    position: relative;
+
+    @include animation(Color);
+
+    &:hover {
+      color: $blue-color;
+    }
+  }
+}
+
+.navigation__link--active {
+  color: $blue-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 2px solid $blue-color;
+    border-radius: 2px;
+    width: 100%;
+    right: 0;
+    bottom: -1px;
+    background-color: $blue-color;
+  }
+}
