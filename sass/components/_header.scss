@@ -108,14 +108,20 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
-  color: $blue-color;
+  color: $contact-color;
 }
-
+.main-header__contact {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+}
 .main-header__item {
-  &:not(:last-child) {
+  &:not(:first-child) {
     margin-bottom: 32px;
   }
 
@@ -123,10 +129,10 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 34px;
+    line-height: 40px;
     letter-spacing: 0.02em;
-    color: $contact-color;
+    color: $blue-color;
   }
 }
 
@@ -154,9 +160,11 @@
 .main-header__social-list {
   margin-right: 20px;
   position: relative;
+
   &:last-child {
     margin-right: 0;
   }
+
   &:not(:last-child)::after {
     content: '';
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -165,4 +173,14 @@
     right: -10px;
     height: 100%;
   }
+}
+
+.main-header__social-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $blue-color;
 }
