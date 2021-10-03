@@ -28,6 +28,7 @@
 }
 
 .main-header__button {
+  padding: 0;
   border: none;
   background-color: white;
   position: absolute;
@@ -70,6 +71,8 @@
 
   background-color: white;
   top: 0;
+  right: 0;
+  left: 0;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -155,6 +158,10 @@
 
 .main-header__social {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .main-header__social-list {
