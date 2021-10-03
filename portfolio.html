@@ -19,41 +19,80 @@
         <a href="./index.html" class="logo main-header__logo"
           >Web<span class="logo__wrap">Studio</span></a
         >
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Студия</a>
+        <button
+          type="button"
+          class="main-header__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="main-header__menu"
+              href="./img/vectors.svg#icon-menu40px"
+            ></use>
+            <use
+              class="main-header__close"
+              href="./img/vectors.svg#icon-close40px"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="main-header__wrap" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--active"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="main-header__contact">
+            <li class="main-header__item">
+              <a class="main-header__link" href="mailto:info@devstudio.com">
+                <svg class="main-header__icon" width="16px" height="12px">
+                  <use href="./img/vectors.svg#icon-mail"></use>
+                </svg>
+                <p class="main-header__text">info@devstudio.com</p>
+              </a>
             </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--active"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакты</a>
+            <li class="main-header__item">
+              <a class="main-header__link" href="tel:+380961111111">
+                <svg class="main-header__icon" width="10px" height="16px">
+                  <use href="./img/vectors.svg#icon-smartphone"></use>
+                </svg>
+                <p class="main-header__text">+38 096 111 11 11</p>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="main-header__contact">
-          <li class="main-header__item">
-            <a class="main-header__link" href="mailto:info@devstudio.com">
-              <svg class="main-header__icon" width="16px" height="12px">
-                <use href="./img/vectors.svg#icon-mail"></use>
-              </svg>
-              <p class="main-header__text">info@devstudio.com</p>
-            </a>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="tel:+380961111111">
-              <svg class="main-header__icon" width="10px" height="16px">
-                <use href="./img/vectors.svg#icon-smartphone"></use>
-              </svg>
-              <p class="main-header__text">+38 096 111 11 11</p>
-            </a>
-          </li>
-        </ul>
+          <ul class="main-header__social">
+            <li class="main-header__social-list">
+              <a class="main-header__social-link" href="">Instagram</a>
+            </li>
+            <li class="main-header__social-list">
+              <a class="main-header__social-link" href="">Twitter</a>
+            </li>
+            <li class="main-header__social-list">
+              <a class="main-header__social-link" href="">Facebook</a>
+            </li>
+            <li class="main-header__social-list">
+              <a class="main-header__social-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -85,7 +124,7 @@
                   <img
                     src="./img/portpholio/tehnokryak.jpg"
                     alt="Технокряк веб-сайт"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -105,7 +144,7 @@
                   <img
                     src="./img/portpholio/poster.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -127,7 +166,7 @@
                   <img
                     src="./img/portpholio/rest-seafood.jpg"
                     alt="приложение Ресторан Seafood"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -147,7 +186,7 @@
                   <img
                     src="./img/portpholio/project-prime.jpg"
                     alt="Проект Prime"
-                    width="370"
+                    max-width="450px"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -167,7 +206,7 @@
                   <img
                     src="./img/portpholio/project-boxes.jpg"
                     alt="приложение Проект Boxes"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -187,7 +226,7 @@
                   <img
                     src="./img/portpholio/inspiration-no-borders.jpg"
                     alt="сайт Inspiration has no Borders"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -207,7 +246,7 @@
                   <img
                     src="./img/portpholio/lim-edith.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -227,7 +266,7 @@
                   <img
                     src="./img/portpholio/project-lab.jpg"
                     alt="Проект LAB"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -247,7 +286,7 @@
                   <img
                     src="./img/portpholio/grow-bis.jpg"
                     alt="Приложение Growing Business"
-                    width="370"
+                    max-width="450"
                   />
                   <p class="portfolio__back">
                     Технокряк это современная площадка распространения
@@ -349,5 +388,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
