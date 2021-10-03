@@ -190,4 +190,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $blue-color;
+
+  @media screen and (max-width: 410px) {
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }

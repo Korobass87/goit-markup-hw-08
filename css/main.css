@@ -434,6 +434,14 @@ body {
   color: #2196f3;
 }
 
+@media screen and (max-width: 410px) {
+  .main-header__social-link {
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+}
+
 .button {
   width: 200px;
   height: 50px;
