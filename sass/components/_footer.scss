@@ -3,8 +3,6 @@
   padding-bottom: 60px;
 
   @media screen and(min-width: 768px) {
-    padding-left: 76px;
-    padding-right: 89px;
   }
 
   background-color: $background-color-footer;
@@ -78,7 +76,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  text-align: center;
   color: $White-color;
   margin-bottom: 20px;
 }
@@ -129,10 +127,28 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and(min-width: 768px) {
+    width: 450px;
+  }
 }
 
 .footer__wrap {
   margin-top: 60px;
+
+  @media screen and(min-width: 768px) {
+    margin-right: auto;
+    margin-left: 151px;
+  }
+}
+
+.footer__wraper {
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    margin-left: 61px;
+    width: 232px;
+  }
 }
 
 .footer__button {

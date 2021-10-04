@@ -1,3 +1,7 @@
+.main-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -138,12 +142,37 @@
   text-align: left;
   letter-spacing: 0.02em;
   color: $link-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include animation(Color);
+  position: relative;
+
+  &:focus,
+  &:hover {
+    color: $blue-color;
+  }
+
+  &--active {
+    color: $blue-color;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 16px;
   }
 }
+
+.navigation__link--active::after {
+  content: '';
+  position: absolute;
+  border: 2px solid $blue-color;
+  border-radius: 2px;
+  width: 100%;
+  right: 0;
+  bottom: -1px;
+  background-color: $blue-color;
+}
+
 .main-header__link {
   font-family: Roboto;
   font-style: normal;
@@ -222,18 +251,6 @@
 }
 
 .navigation__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  @include animation(Color);
-
-  &:focus,
-  &:hover {
-    color: $blue-color;
-  }
-
-  &--active {
-    color: $blue-color;
-  }
 }
 
 .main-header__social {
