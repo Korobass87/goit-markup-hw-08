@@ -52,7 +52,7 @@
   padding: 0;
   border: none;
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   z-index: 4;
@@ -94,7 +94,7 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    height: 95vh;
+    height: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -109,7 +109,8 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
+    overflow-y: hidden;
   }
 
   &.is-open {
