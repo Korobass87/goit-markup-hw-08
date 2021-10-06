@@ -74,6 +74,12 @@
   }
 }
 
+.main-header__button.is-open {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
 .main-header__button .main-header__close {
   display: none;
 }
@@ -114,9 +120,11 @@
   left: 0;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    // display: none;
     position: fixed;
     overflow-y: hidden;
+    transform: translateY(-100%);
+    transition: transform $duration $cubic-bezier;
   }
 
   &.is-open {
@@ -125,6 +133,7 @@
       flex-direction: column;
       justify-content: space-between;
       overflow: hidden;
+      transform: translateY(0);
     }
     @media screen and (min-width: 768px) {
       display: flex;

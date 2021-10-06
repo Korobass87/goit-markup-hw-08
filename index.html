@@ -174,34 +174,61 @@
           <h2 class="services__title title-h2">Чем мы занимаемся</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img
-                src="./img/programming.jpg"
-                width="370"
-                alt="Програмирование"
-                class="services__img"
-              />
+              <picture>
+                <source
+                  srcset="./img/programming.jpg 1x, ./img/programming@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/programming.jpg"
+                  width="100%"
+                  alt="Програмирование"
+                  class="services__img"
+                />
+              </picture>
+
               <div class="services__wrapper">
                 <h3 class="services__subtitle">Десктопные приложения</h3>
               </div>
             </li>
             <li class="services__item">
-              <img
-                src="./img/development-mobile-version.jpg"
-                width="370"
-                alt="Выбор макета"
-                class="services__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/development-mobile-version.jpg    1x,
+                    ./img/development-mobile-version@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/development-mobile-version.jpg"
+                  width="100%"
+                  alt="выбор макета"
+                  class="services__img"
+                />
+              </picture>
+
               <div class="services__wrapper">
                 <h3 class="services__subtitle">Мобильные приложения</h3>
               </div>
             </li>
             <li class="services__item">
-              <img
-                src="./img/design.jpg"
-                width="370"
-                alt="Подбор цвета"
-                class="services__img"
-              />
+              <picture>
+                <source
+                  srcset="./img/design.jpg 1x, ./img/design@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/design.jpg"
+                  width="100%"
+                  alt="выбор макета"
+                  class="services__img"
+                />
+              </picture>
+
               <div class="services__wrapper">
                 <h3 class="services__subtitle">Дизайнерские решения</h3>
               </div>
@@ -214,12 +241,30 @@
           <h2 class="team__title title-h2">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./img/demiynenko.jpg"
-                width="270"
-                alt="Игорь Демьяненко"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="./img/dem-mob.jpg 1x, ./img/dem-mob@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/dem-tab.jpg 1x, ./img/dem-tab@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/dem-desk.jpg 1x, ./img/dem-desk@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/dem-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  class="team__img"
+                  width="100%"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__post">Product Designer</p>
@@ -252,12 +297,29 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/repina.jpg"
-                width="270"
-                alt="Ольга Репина"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="./img/rep-mob.jpg 1x, ./img/rep-mob@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/rep-tab.jpg 1x, ./img/rep-tab@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/rep-desk.jpg 1x, ./img/rep-desk@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/rep-mob.jpg"
+                  alt="Ольга Репина"
+                  class="team__img"
+                  width="100%"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__post">Frontend Developer</p>
@@ -290,12 +352,29 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/tarasov.jpg"
-                width="270"
-                alt="Николай Тарасов"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="./img/tar-mob.jpg 1x, ./img/tar-mob@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/tar-tab.jpg 1x, ./img/tar-tab@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/tar-desk.jpg 1x, ./img/tar-desk@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/tar-mob.jpg"
+                  alt="Николай Тарасов"
+                  class="team__img"
+                  width="100%"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__post">Marketing</p>
@@ -328,12 +407,29 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/ermakov.jpg"
-                width="270"
-                alt="Михаил Ермаков"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="./img/erm-mob.jpg 1x, ./img/erm-mob@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/erm-tab.jpg 1x, ./img/erm-tab@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/erm-desk.jpg 1x, ./img/erm-desk@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/erm-mob.jpg"
+                  alt="Михаил Ермаков"
+                  class="team__img"
+                  width="100%"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__post">UI Designer</p>
