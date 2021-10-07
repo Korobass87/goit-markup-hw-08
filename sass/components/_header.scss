@@ -232,6 +232,8 @@
   @media screen and (min-width: 1200px) {
     margin-left: 305px;
     align-items: center;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 .main-header__item {
@@ -277,9 +279,6 @@
 
   @include animation(Fill);
 
-  .main-header__link:hover & {
-    fill: $blue-color;
-  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -294,6 +293,10 @@
       width: 10px;
       height: 14px;
     }
+  }
+
+  .main-header__link:hover & {
+    fill: $blue-color;
   }
 }
 
@@ -346,5 +349,11 @@
 .navigation {
   @media screen and (min-width: 768px) {
     margin-left: 88px;
+  }
+}
+.main-header__text {
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
