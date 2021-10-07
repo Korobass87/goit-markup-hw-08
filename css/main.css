@@ -1185,6 +1185,7 @@ body {
 
 .advantages__text {
   max-width: 450px;
+  text-align: left;
 }
 
 .main-section__heading {
@@ -1272,6 +1273,13 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -1366,6 +1374,10 @@ body {
   background-color: #2196f3;
 }
 
+.team__img {
+  width: 100%;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1414,6 +1426,13 @@ body {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -1773,6 +1792,15 @@ body {
 @media screen and (min-width: 768px) {
   .filter {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1817,6 +1845,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1848,8 +1883,10 @@ body {
           box-shadow: none;
 }
 
-.portfolio__item:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .portfolio__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1954,5 +1991,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.portfolio__img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

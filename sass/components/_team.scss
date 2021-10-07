@@ -2,6 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-button-color;
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   // .team__title
 
   &__title {
@@ -100,4 +105,8 @@
 .social__link--team:hover,
 .social__link--team:focus {
   background-color: $blue-color;
+}
+
+.team__img {
+  width: 100%;
 }
